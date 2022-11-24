@@ -23,12 +23,18 @@ const pathName = path.join(__dirname,params)
 console.log( "hiiii"+ pathName);
     try {
       const data = await fs.readFile( pathName , { encoding: 'utf8' });
+      console.log(data);
    return data;
+
     } catch (err) {
       console.log(err);  
   }
-  
 }
+
+
+
+
+
 
 
  
